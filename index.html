@@ -33,6 +33,9 @@
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
+        <!-- Animation -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -108,7 +111,7 @@
                     <p class="section__desc service__desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</p>
                     <div class="service__row">
                         <figure>
-                            <img src="./assets/images/service.png" alt="Our services" class="service__img" />
+                            <img src="./assets/images/service.png" alt="Our services" class="service__img wow animate__slideInLeft" />
                         </figure>
                         <div>
                             <div class="service__list">
@@ -487,5 +490,16 @@
                 </div>
             </div>
         </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW({
+                animateClass: "animate__animated",
+            }).init();
+        </script>
     </body>
 </html>
