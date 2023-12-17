@@ -34,7 +34,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
         <!-- Animation -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -111,10 +111,10 @@
                     <p class="section__desc service__desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</p>
                     <div class="service__row">
                         <figure>
-                            <img src="./assets/images/service.png" alt="Our services" class="service__img wow animate__slideInLeft" />
+                            <img src="./assets/images/service.png" alt="Our services" class="service__img" data-aos="fade-right" />
                         </figure>
                         <div>
-                            <div class="service__list">
+                            <div class="service__list" data-aos="fade-left">
                                 <!-- Service item 1 -->
                                 <section class="service-item">
                                     <div class="service-item__icon">
@@ -175,7 +175,7 @@
                     <h2 class="section__heading">How it works</h2>
                     <p class="section__desc work__desc">Exceptional dental care for all ages. Your great smile begins with a great dentist.</p>
 
-                    <div class="work__list">
+                    <div class="work__list" data-aos="fade-up" data-aos-duration="3000">
                         <!-- Work item 1 -->
                         <section class="work-item">
                             <img src="./assets/icons/search.svg" alt="" class="work-item__icon" />
@@ -490,16 +490,9 @@
                 </div>
             </div>
         </footer>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            new WOW({
-                animateClass: "animate__animated",
-            }).init();
+            AOS.init();
         </script>
     </body>
 </html>
